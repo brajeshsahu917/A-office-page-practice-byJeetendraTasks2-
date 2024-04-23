@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business page</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border: 2px solid red; */
+}
+
+.container {
+  /* display: flex; */
+  width: 70%;
+  margin: 0 10px ;
+  align-items: center;
+  /* border: 2px solid red; */
+}
+
+
+#navbarSupportedContent ul{
+  /* border: 2px solid green; */
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+   /******* search menu ******/
+.form-control{
+  width: 32vw;
+  height: 35px;
+  border-radius: 17px;
+
+}
+
+
+ 
+.selectofnav {
+  border: none;
+  
+}
+
+.active {
+  border-radius: 17px;
+  background-color:rgb(243, 176, 132);
+  padding: 0 7px;
+}
+
+.help {
+  /* border: 2px solid black; */
+  width: 25%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#createbutton {
+  /* border: 2px solid black; */
+  width: 26%;
+  height: 30px;
+  border-radius: 17px;
+  padding-left: 10px;
+  padding-bottom: 5px; 
+} 
+
+ /******* tab bar  *****/
+.nav{
+  padding-left: 10px;
+  font-weight:620;
+  margin:7px 0 7px 20px ;
+}
+
+#payment{
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  border-radius: 18px;
+  height: 27px;
+  width: 7rem;
+  margin-top: 6px;
+  color: white;
+}
+
+.morebutton {
+   border: none;
+  margin-left: 10px;
+} 
+
+#developerOfTabbar{
+  margin-left: 280px;
+}
+
+#togalOfTabbar{
+  height: 28px;
+  width: 34px;
+  margin-top: 6px;
+}
+
+
+#zoo {
+  /* margin-left: -15px; */
+}
+
+#testData{
+  border-top: 2px solid rgb(182, 165, 165);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#testData span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: orange;
+  color: white  ;
+  height: 18px;
+  font-size: 12px;
+  width: 80px;
+  font-weight: bold;
+}
+
+#main {
+  /* border: 2px solid red; */
+  /* height: 82vh; */
+  display: flex;
+
+}
+.sidebar {
+  background-color: #f8f9fa;
+  padding: 20px;
+  width: 17vw;
+  height: 76vh;
+   /* border: 4px solid green; */
+}
+
+.list-unstyled li{
+  margin:13px 0;
+}
+
+#alltransaction{
+  margin-top: 34px;
+}
+
+#maincontent{
+  width: calc(100vw - 17vw);
+  /* border: 1px solid blue; */
+}
+
+#allPayment {
+  color: blueviolet;
+  margin-top: 13px;
+  padding-left: 10px;
+  font-weight: 700;
+  border-left: 2px solid blueviolet;
+}
+
+#mainline1 {
+  /* border: 2px solid green; */
+  /* height: 200px; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#h2{
+  font-size: 2rem;
+  font-weight: 600;
+  /* border: 2px solid; */
+  margin-left: 3%;
+  /* width: 50%; */
+  margin-top: 5px;
+}
+
+#btn{
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width:30vw;
+}
+.mainbtn{
+  border: 1px solid rgb(184, 175, 175);
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 3px;
+  padding: 2px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#mainline2{
+  border-bottom: 1px solid;
+}
+
+#btn button:nth-child(3) {
+  padding: 0 12px;
+  border-radius: 4px;
+  margin-left: 5px;
+  background-color: blue;
+  color: white;
+  height: 28px;
+  border: 2px solid blue;
+}
+
+
+
+#allOftab a{
+  border-bottom: 2px solid blueviolet;
+  color: blueviolet;
+  width: 20px;
+  margin-top: 8px;
+  margin-right: 14px;
+  padding: 0px;
+}
+
+#succeeded{
+  color:green;
+  margin-left: 10px;
+  background-color: rgb(147, 201, 147);
+  border-radius: 3px;
+  padding: 0 3px;
+  font-size:12px;
+  font-weight: bold;
+}
+
+
+
+#Rs{
+  /* font-style: normal; */
+  color: black;
+  margin: 0 10px;
+  background-color: white;
+}
+
+#INR{
+  font-weight: 400;
+}
+#Result{
+  /* border: 2px solid; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+p button{
+  width: 80px;
+  padding: 1px 10px;
+  border-radius: 3px;
+  border: none;
+  color: rgb(167, 152, 152);
+  background-color: whitesmoke;
+
+}
+
+
+/********* togal buttun *********/
+.toggle 
+{
+  position: relative;
+  display: inline-block;
+  width: 38px;
+  height: 18px;
+  margin-top: 10px;
+}
+.toggle input {
+  display: none;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;   
+  width: 18px;
+  /* left: 4px; */
+  /* bottom: 4px; */
+  background-color: rgb(247, 242, 242);
+  border-radius: 50%;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #f0b074;
+}
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+.toggle {
+  padding: 4px;
+} 
+
+
+/*********** media query ******/
+@media screen and (max-width: 768px) {
+  #main{
+    /* border: 2px solid red; */
+    
+  }
+  #sideBar{
+    /* width: 30%; */
+    /* border: 2px solid rgb(77, 64, 201); */
+    /* display: none; */
+  }
+  #maincontent{
+    /* align-items: center; */
+    /* border: 2px solid red; */
+    /* width: 100%; */
+  }
+}
+
+@media screen and (max-width: 670px) {
+  nav{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .container{
+    width: 100%;
+    margin:0 auto;
+  }
+
+  nav .help{
+    /* border: 2px solid rgb(71, 207, 37); */
+    width: 100%;
+    margin-top: 15px;
+    
+  }
+  #maincontent{
+    /* border: 4px solid rgb(9, 33, 170); */
+    width: 100vw;
+  }
+  #mainline1{
+    /* border: 2px solid rgb(71, 207, 37); */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #mainline1 h2{
+    font-size: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 70px;
+  }
+  #btn{
+    width: 100%;
+    margin: 0 auto;
+
+  }
+  #sideBar{
+    /* width: 30%; */
+    /* border: 2px solid rgb(77, 64, 201); */
+    display: none;
+  }
+  .grid-item p button{
+    margin: 5px;
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  nav{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+  .nav-item{ 
+    font-size: 13px;
+    font-weight:bold;
+  }
+ 
+  #mainline1{
+    /* border: 2px solid rgb(71, 207, 37); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #h2{
+    font-size: 1.7rem;
+    margin:0 auto ;
+  }
+  .mainbtn{
+    font-size: 12px;
+  }
+  .table{
+    font-size: 11px;
+  }
+  .grid-item p button{
+    margin: 5px;
+    margin-right: 30px;
+  }
+}
+
+</style>
+    <!-- <link rel="stylesheet" href="./myfile.css" /> -->
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-briefcase"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5"
+                />
+              </svg>
+            </li>
+
+            <li>
+              <select class="selectofnav">
+                <option value="">New Business</option>
+              </select>
+            </li>
+
+            <li class="active">Activate Account &#8594;</li>
+          </ul>
+        </div>
+
+        <div>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search..."
+              aria-label="Search"
+            />
+          </form>
+        </div>
+      </div>
+
+      <!-- second div navbar ka -->
+      <div class="help">
+        <select id="createbutton">
+          <option>Create</option>
+        </select>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-question-circle-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"
+          /></svg
+        >
+        <a>Help</a>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-bell-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-gear-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-person-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
+          />
+        </svg>
+      </div>
+    </nav>
+
+    <!-------------- tab  ----------->
+    <div id="tabnav">
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link disabled" aria-disabled="true">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" id="payment" aria-disabled="true"
+          >Payments</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" aria-disabled="true">Balances</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" aria-disabled="true">Customers</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" aria-disabled="true">Products</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" aria-disabled="true">Reports</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" aria-disabled="true">Connect</a>
+      </li>
+      <select class="morebutton">
+        <option>More</option>
+      </select>
+      <li class="nav-item">
+        <a class="nav-link disabled" aria-disabled="true" id="developerOfTabbar"
+          >Developers</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" aria-disabled="true"> Test mode</a>
+      </li>
+
+      <label class="toggle">
+      <input type="checkbox">
+      <span class="slider"></span>
+      </label> 
+
+    </ul>
+  </div>
+    <!-------------- sidebar ----------->
+
+    <div ID="testData"> <span>TEST DATA</span></div>
+
+    <div id="main">
+      <div id="sideBar">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- Sidebar -->
+            <div class="col-lg-3 sidebar">
+              <h5>Payments</h5>
+              <ul class="list-unstyled">
+                <li id="allPayment">All Payments</li>
+                <li >All transactions</li>
+                <li id="alltransaction">Fraud & risk</li>
+                <li>Invoices</li>
+                <li>Subscriptions</li>
+                <li>Quotes</li>
+                <li id="alltransaction">Payment Links</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Main Content -->
+      <div id="maincontent" class="col-lg-9">
+        <div id="mainline1">
+          <div id="h2">Payments</div>
+          <div id="btn">
+            <button class="mainbtn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-funnel-fill" viewBox="0 0 16 16">
+              <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5z"/>
+            </svg>&nbsp; Filter</button>
+            <button class="mainbtn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/>
+            </svg>&nbsp; Export</button>
+            <button class="mainbtn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+            </svg> Create payment</button>
+          </div>
+        </div>
+
+        <div id="mainline2">
+          <ul class="nav">
+            <li id="allOftab" class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">All</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true"
+                >Succeeded</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Refunded</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Uncaptured</a>
+            </li>
+          </div>
+
+        <!-------------- TABLE bootstrap ------->
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col"><input type="checkbox"><SPAN  id="Rs"> AMOUNT</SPAN></th>
+              <th scope="col">DESCRIPTION</th>
+              <th scope="col">CUSTOMER</th>
+              <th scope="col">DATE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><input type="checkbox"><span id="Rs" >&#8377;0.50</span> <span id="INR">INR</SPAn><SPAN id="succeeded">Succeeded&check;</SPAN></th>
+              <td>Test</td>
+              <td></td>
+              <td>Feb 25,7:25 PM </td>
+            </tr>
+            <tr>
+              <th scope="row"><input type="checkbox"><span id="Rs" >&#8377;0.50</span> <span id="INR">INR</SPAn><SPAN id="succeeded">Succeeded&check;</SPAN></th>
+              <td>Test</td>
+              <td></td>
+              <td>Feb 25,7:25 PM </td>
+            </tr>
+            <tr>
+              <th scope="row"><input type="checkbox"><span id="Rs" >&#8377;0.50</span> <span id="INR">INR</SPAn><SPAN id="succeeded">Succeeded&check;</SPAN></th>
+              <td colspan="2">Test</td>
+              <td>Feb 25,7:25 PM </td>
+            </tr>
+            <tr>
+              <th scope="row"><input type="checkbox"><span id="Rs" >&#8377;0.50</span> <span id="INR">INR</SPAn> <SPAN id="succeeded">Succeeded&check;</SPAN></th>
+              <td colspan="2">Test</td>
+              <td>Feb 25,7:25 PM </td>
+            </tr>
+            <tr>
+              <th scope="row">4 results</th>
+              <td colspan="2"></td>
+              <td> <div class="grid-item"><p>
+                <button>Previous</button>
+                <button>Next</button>
+              </p></div></td>
+            </tr>
+
+          </tbody>
+        </table>
+      
+
+      </div>
+
+    </div>
+  </body>
+</html>
